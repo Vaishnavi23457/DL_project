@@ -1,0 +1,16 @@
+[04:01:47] device=cpu  args={'data': 'csv', 'train_csv': 'data/food101/train.csv', 'val_csv': 'data/food101/val.csv', 'test_csv': None, 'img_root': 'data/food101', 'col_image': 'image', 'col_text': 'text', 'col_label': 'label', 'col_audio': 'audio', 'img_size': 64, 'max_len': 64, 'min_freq': 2, 'max_vocab': 30000, 'num_classes': 6, 'syn_train_n': 1920, 'syn_val_n': 480, 'syn_text_p': 0.7, 'syn_img_p': 0.7, 'syn_img_noise': 1.0, 'syn_synonyms': 1, 'image_encoder': 'smallcnn', 'pretrained_image': False, 'text_encoder': 'transformer', 'hf_model': 'distilbert-base-uncased', 'freeze_hf': False, 'text_dim': 256, 'text_layers': 2, 'head': 'linear', 'only': 'text', 'modalities': 'auto', 'audio_encoder': 'mlp', 'audio_dim': 0, 'audio_out_dim': 128, 'modulation': 'none', 'q_base': 0.5, 'lam': 0.5, 'alpha': 0.5, 'no_ge': False, 'ge_scope': 'all', 'z': 'tanh', 'score_mode': 'auto', 'mod_start': 0, 'mod_end': 1000000000, 'epochs': 12, 'batch_size': 32, 'optimizer': 'sgd', 'lr': 0.01, 'lr_text': None, 'momentum': 0.9, 'weight_decay': 0.0001, 'sched': 'cos', 'lr_step': 30, 'lr_gamma': 0.1, 'grad_clip': None, 'amp': False, 'num_workers': 0, 'seed': 0, 'dataset_name': 'food101', 'device': 'auto', 'out_dir': 'runs/food_only_text', 'log_interval': 0, 'probe': False, 'eval_every': 1}
+[04:01:48] classes=10 vocab=42 train_batches=78 val_batches=32
+[04:01:48] model params: text=1,196,544 head=2,570
+[04:01:53] [ep 000] train loss=1.6058 acc=0.5473 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7290 uni_text=0.7290 | 4s
+[04:01:58] [ep 001] train loss=0.8443 acc=0.7151 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7290 uni_text=0.7290 | 4s
+[04:02:04] [ep 002] train loss=0.8038 acc=0.7151 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7310 uni_text=0.7310 | 4s
+[04:02:09] [ep 003] train loss=0.7973 acc=0.7183 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7360 uni_text=0.7360 | 4s
+[04:02:14] [ep 004] train loss=0.7911 acc=0.7147 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7300 uni_text=0.7300 | 5s
+[04:02:20] [ep 005] train loss=0.7823 acc=0.7131 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7370 uni_text=0.7370 | 5s
+[04:02:25] [ep 006] train loss=0.7726 acc=0.7200 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7310 uni_text=0.7310 | 5s
+[04:02:31] [ep 007] train loss=0.7637 acc=0.7188 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7350 uni_text=0.7350 | 5s
+[04:02:36] [ep 008] train loss=0.7642 acc=0.7139 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7340 uni_text=0.7340 | 5s
+[04:02:41] [ep 009] train loss=0.7554 acc=0.7228 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7280 uni_text=0.7280 | 5s
+[04:02:46] [ep 010] train loss=0.7600 acc=0.7163 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7390 uni_text=0.7390 | 4s
+[04:02:52] [ep 011] train loss=0.7390 acc=0.7204 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.7370 uni_text=0.7370 | 5s
+[04:02:52] best val acc=0.7390 @ epoch 10

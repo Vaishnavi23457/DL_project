@@ -1,0 +1,23 @@
+>> syn_only_image
+>> syn_only_text
+>> syn_none
+>> syn_opm
+>> syn_both
+>> syn_ogm
+
+run            | mod        | epoch | val_acc | uni_image | rho_image
+---------------------------------------------------------------------
+syn_only_image | only-image | 14    | 0.7150  | 0.7150    | 1.0000   
+syn_only_text  | only-text  | 7     | 0.7383  |           |          
+syn_none       | none       | 13    | 0.8850  | 0.7050    | 1.4470   
+syn_opm        | opm        | 14    | 0.9050  | 0.7150    | 1.1378   
+syn_ogm        | ogm        | 13    | 0.8983  | 0.7167    | 1.2525   
+syn_both       | both       | 14    | 0.9083  | 0.7300    | 1.1326   
+
+(average of last 3 epochs)
+run      | mod  | epoch | val_acc | uni_image | rho_image | uni_text | rho_text
+-------------------------------------------------------------------------------
+syn_none | none | last3 | 0.8839  | 0.7044    | 1.4489    | 0.7250   | 0.6996  
+syn_opm  | opm  | last3 | 0.9006  | 0.7178    | 1.1344    | 0.7317   | 0.8898  
+syn_ogm  | ogm  | last3 | 0.8928  | 0.7167    | 1.2468    | 0.7283   | 0.8142  
+syn_both | both | last3 | 0.9061  | 0.7222    | 1.1282    | 0.7250   | 0.8957  

@@ -1,0 +1,18 @@
+device=cpu  args={'data': 'csv', 'train_csv': 'data/meld/train.csv', 'val_csv': 'data/meld/val.csv', 'test_csv': None, 'img_root': 'data/meld', 'col_image': 'image', 'col_text': 'text', 'col_label': 'label', 'col_audio': 'audio', 'img_size': 224, 'max_len': 48, 'min_freq': 2, 'max_vocab': 30000, 'num_classes': 6, 'syn_train_n': 1920, 'syn_val_n': 480, 'syn_text_p': 0.7, 'syn_img_p': 0.7, 'syn_img_noise': 1.0, 'syn_synonyms': 1, 'image_encoder': 'resnet18', 'pretrained_image': False, 'text_encoder': 'transformer', 'hf_model': 'distilbert-base-uncased', 'freeze_hf': False, 'text_dim': 256, 'text_layers': 2, 'head': 'linear', 'only': 'none', 'modalities': 'auto', 'audio_encoder': 'mlp', 'audio_dim': 0, 'audio_out_dim': 128, 'modulation': 'none', 'q_base': 0.5, 'lam': 0.5, 'alpha': 0.5, 'no_ge': False, 'ge_scope': 'all', 'z': 'tanh', 'score_mode': 'auto', 'mod_start': 0, 'mod_end': 1000000000, 'epochs': 12, 'batch_size': 32, 'optimizer': 'sgd', 'lr': 0.01, 'lr_text': None, 'momentum': 0.9, 'weight_decay': 0.0001, 'sched': 'cos', 'lr_step': 30, 'lr_gamma': 0.1, 'grad_clip': None, 'amp': False, 'num_workers': 0, 'seed': 0, 'dataset_name': 'meld', 'device': 'auto', 'out_dir': 'runs/meld_s0_none', 'log_interval': 0, 'probe': False, 'eval_every': 1}
+classes=7 vocab=2705 train_batches=312 val_batches=35
+/home/user/DL_project/balanced_mm/bml/models.py:74: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, num_layers)
+model params: audio=110,464 text=1,878,272 head=2,695
+[ep 000] train loss=1.3348 acc=0.5503 | rho_audio=0.57 rho_text=1.82 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5257 uni_audio=0.3886 uni_text=0.5203 | 32s
+[ep 001] train loss=1.2495 acc=0.5762 | rho_audio=0.50 rho_text=2.04 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5591 uni_audio=0.3751 uni_text=0.5464 | 33s
+[ep 002] train loss=1.2150 acc=0.5936 | rho_audio=0.47 rho_text=2.18 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5437 uni_audio=0.3724 uni_text=0.5347 | 34s
+[ep 003] train loss=1.1841 acc=0.5989 | rho_audio=0.47 rho_text=2.18 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5663 uni_audio=0.2876 uni_text=0.5464 | 32s
+[ep 004] train loss=1.1626 acc=0.6079 | rho_audio=0.47 rho_text=2.17 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5672 uni_audio=0.3138 uni_text=0.5573 | 32s
+[ep 005] train loss=1.1331 acc=0.6110 | rho_audio=0.47 rho_text=2.14 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5518 uni_audio=0.3354 uni_text=0.5491 | 32s
+[ep 006] train loss=1.1158 acc=0.6194 | rho_audio=0.47 rho_text=2.19 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5762 uni_audio=0.3436 uni_text=0.5618 | 33s
+[ep 007] train loss=1.0955 acc=0.6239 | rho_audio=0.47 rho_text=2.16 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5780 uni_audio=0.3048 uni_text=0.5582 | 32s
+[ep 008] train loss=1.0785 acc=0.6260 | rho_audio=0.49 rho_text=2.09 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5753 uni_audio=0.2931 uni_text=0.5627 | 31s
+[ep 009] train loss=1.0640 acc=0.6333 | rho_audio=0.47 rho_text=2.17 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5717 uni_audio=0.3084 uni_text=0.5600 | 31s
+[ep 010] train loss=1.0474 acc=0.6397 | rho_audio=0.47 rho_text=2.14 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5771 uni_audio=0.3318 uni_text=0.5654 | 34s
+[ep 011] train loss=1.0399 acc=0.6429 | rho_audio=0.47 rho_text=2.15 | k_audio=1.00 q_audio=0.00 k_text=1.00 q_text=0.00 || val acc=0.5807 uni_audio=0.3120 uni_text=0.5645 | 34s
+best val acc=0.5807 @ epoch 11

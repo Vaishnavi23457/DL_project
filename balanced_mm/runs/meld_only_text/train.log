@@ -1,0 +1,16 @@
+[04:32:38] device=cpu  args={'data': 'csv', 'train_csv': 'data/meld/train.csv', 'val_csv': 'data/meld/val.csv', 'test_csv': None, 'img_root': 'data/meld', 'col_image': 'image', 'col_text': 'text', 'col_label': 'label', 'col_audio': 'audio', 'img_size': 224, 'max_len': 48, 'min_freq': 2, 'max_vocab': 30000, 'num_classes': 6, 'syn_train_n': 1920, 'syn_val_n': 480, 'syn_text_p': 0.7, 'syn_img_p': 0.7, 'syn_img_noise': 1.0, 'syn_synonyms': 1, 'image_encoder': 'resnet18', 'pretrained_image': False, 'text_encoder': 'transformer', 'hf_model': 'distilbert-base-uncased', 'freeze_hf': False, 'text_dim': 256, 'text_layers': 2, 'head': 'linear', 'only': 'text', 'modalities': 'auto', 'audio_encoder': 'mlp', 'audio_dim': 0, 'audio_out_dim': 128, 'modulation': 'none', 'q_base': 0.5, 'lam': 0.5, 'alpha': 0.5, 'no_ge': False, 'ge_scope': 'all', 'z': 'tanh', 'score_mode': 'auto', 'mod_start': 0, 'mod_end': 1000000000, 'epochs': 12, 'batch_size': 32, 'optimizer': 'sgd', 'lr': 0.01, 'lr_text': None, 'momentum': 0.9, 'weight_decay': 0.0001, 'sched': 'cos', 'lr_step': 30, 'lr_gamma': 0.1, 'grad_clip': None, 'amp': False, 'num_workers': 0, 'seed': 0, 'dataset_name': 'meld', 'device': 'auto', 'out_dir': 'runs/meld_only_text', 'log_interval': 0, 'probe': False, 'eval_every': 1}
+[04:32:39] classes=7 vocab=2705 train_batches=312 val_batches=35
+[04:32:39] model params: text=1,878,272 head=1,799
+[04:33:13] [ep 000] train loss=1.3522 acc=0.5407 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5248 uni_text=0.5248 | 33s
+[04:33:46] [ep 001] train loss=1.2709 acc=0.5715 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5221 uni_text=0.5221 | 32s
+[04:34:20] [ep 002] train loss=1.2445 acc=0.5859 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5537 uni_text=0.5537 | 33s
+[04:34:54] [ep 003] train loss=1.2233 acc=0.5879 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5528 uni_text=0.5528 | 33s
+[04:35:26] [ep 004] train loss=1.2028 acc=0.5960 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5600 uni_text=0.5600 | 32s
+[04:35:59] [ep 005] train loss=1.1811 acc=0.6016 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5555 uni_text=0.5555 | 32s
+[04:36:33] [ep 006] train loss=1.1612 acc=0.6069 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5564 uni_text=0.5564 | 33s
+[04:37:08] [ep 007] train loss=1.1424 acc=0.6142 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5591 uni_text=0.5591 | 34s
+[04:37:42] [ep 008] train loss=1.1246 acc=0.6189 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5600 uni_text=0.5600 | 33s
+[04:38:16] [ep 009] train loss=1.1084 acc=0.6241 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5555 uni_text=0.5555 | 33s
+[04:38:49] [ep 010] train loss=1.0993 acc=0.6235 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5564 uni_text=0.5564 | 33s
+[04:39:22] [ep 011] train loss=1.0946 acc=0.6260 | rho_text=1.00 | k_text=1.00 q_text=0.00 || val acc=0.5591 uni_text=0.5591 | 32s
+[04:39:22] best val acc=0.5600 @ epoch 4

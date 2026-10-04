@@ -1,0 +1,24 @@
+{
+  "best_val_acc": 0.8750000007947286,
+  "best_epoch": 12,
+  "final": {
+    "epoch": 14,
+    "train_loss": 0.24521915324032306,
+    "train_acc": 0.9116666666666666,
+    "train_uni_acc_image": 0.9658333333333333,
+    "train_uni_acc_text": 0.8120833333333334,
+    "train_rho_image": 1.136869592666626,
+    "train_rho_text": 0.8883782625198364,
+    "train_k_image": 1.0,
+    "train_k_text": 1.0,
+    "train_q_image": 0.48837819417317707,
+    "train_q_text": 0.048309098879496255,
+    "train_time_s": 25.33050298690796,
+    "val_loss": 0.3571235982577006,
+    "val_acc": 0.8733333333333333,
+    "val_uni_acc_image": 0.705,
+    "val_uni_acc_text": 0.73,
+    "val_rho_image": 0.9105528299013773,
+    "val_rho_text": 1.116475461324056
+  }
+}

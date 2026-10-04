@@ -1,0 +1,18 @@
+{
+  "best_val_acc": 0.554,
+  "best_epoch": 10,
+  "final": {
+    "epoch": 11,
+    "train_loss": 1.3182181058785853,
+    "train_acc": 0.5665064102564102,
+    "train_uni_acc_image": 0.5665064102564102,
+    "train_rho_image": 1.0,
+    "train_k_image": 1.0,
+    "train_q_image": 0.0,
+    "train_time_s": 17.191335201263428,
+    "val_loss": 1.309845705986023,
+    "val_acc": 0.554,
+    "val_uni_acc_image": 0.554,
+    "val_rho_image": 1.0
+  }
+}

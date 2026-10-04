@@ -1,0 +1,10 @@
+torch>=2.0
+torchvision>=0.15
+numpy>=1.23
+Pillow>=9.0
+matplotlib>=3.5        # plots (plot_history.py, bml/analysis.py)
+# optional: pretrained text encoder (--text_encoder hf)
+# transformers>=4.30
+# optional: tests + notebook build
+# pytest
+# nbformat, nbclient, ipykernel   # scripts/build_walkthrough_notebook.py

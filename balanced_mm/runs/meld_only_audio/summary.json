@@ -1,0 +1,18 @@
+{
+  "best_val_acc": 0.46889089317983934,
+  "best_epoch": 2,
+  "final": {
+    "epoch": 11,
+    "train_loss": 1.3682942245251093,
+    "train_acc": 0.51171875,
+    "train_uni_acc_audio": 0.51171875,
+    "train_rho_audio": 1.0,
+    "train_k_audio": 1.0,
+    "train_q_audio": 0.0,
+    "train_time_s": 1.3469657897949219,
+    "val_loss": 1.524671323241362,
+    "val_acc": 0.45446348064003816,
+    "val_uni_acc_audio": 0.45446348064003816,
+    "val_rho_audio": 1.0
+  }
+}
