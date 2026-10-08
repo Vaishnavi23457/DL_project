@@ -7,6 +7,8 @@ balanced_mm/runs/**/*.pt
 balanced_mm/data/
 *.log
 !balanced_mm/runs/*/train.log
+balanced_mm/demo_runs/**/*.pt
+!balanced_mm/demo_runs/*/train.log
 # walkthrough notebook scratch outputs
 balanced_mm/notebooks/_walkthrough_tmp/
 

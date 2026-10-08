@@ -75,6 +75,7 @@ def get_args(argv=None):
     p.add_argument("--mod_start", type=int, default=0); p.add_argument("--mod_end", type=int, default=10 ** 9)
     # ---------------- optimisation
     p.add_argument("--epochs", type=int, default=40); p.add_argument("--batch_size", type=int, default=32)
+    p.add_argument("--keep_last_batch", action="store_true", help="use every training row, including the final partial batch")
     p.add_argument("--optimizer", choices=["sgd", "adam", "adamw"], default="sgd")
     p.add_argument("--lr", type=float, default=1e-3); p.add_argument("--lr_text", type=float, default=None)
     p.add_argument("--momentum", type=float, default=0.9); p.add_argument("--weight_decay", type=float, default=1e-4)
@@ -190,7 +191,7 @@ def main(argv=None):
     if args.probe:
         log("linear-probing frozen encoders (paper footnote-1 protocol)...")
         summary["probe_best_ckpt"] = None
-        ck = torch.load(os.path.join(args.out_dir, "best.pt"), map_location=device)
+        ck = torch.load(os.path.join(args.out_dir, "best.pt"), map_location=device, weights_only=True)
         model.load_state_dict(ck["model"])
         pr = probe_unimodal_encoders(model, loaders["train"], loaders["val"], C, device)
         summary["probe_best_ckpt"] = pr

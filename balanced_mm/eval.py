@@ -35,7 +35,7 @@ def collect_preds(model, loader, device):
     return torch.cat(outs).numpy(), torch.cat(ys).numpy()
 
 
-def main():
+def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--run_dir", required=True)
     ap.add_argument("--ckpt", default="best.pt")
@@ -45,7 +45,7 @@ def main():
     ap.add_argument("--probe_epochs", type=int, default=200)
     ap.add_argument("--batch_size", type=int, default=64)
     ap.add_argument("--device", default="auto")
-    a = ap.parse_args()
+    a = ap.parse_args(argv)
 
     cfg = load_json(os.path.join(a.run_dir, "config.json"))
     args = SimpleNamespace(**cfg)
@@ -61,7 +61,7 @@ def main():
 
     device = get_device(a.device)
     data = build_dataloaders(args, out_dir=None)
-    ck = torch.load(os.path.join(a.run_dir, a.ckpt), map_location=device)
+    ck = torch.load(os.path.join(a.run_dir, a.ckpt), map_location=device, weights_only=True)
     model = build_model(args, ck.get("num_classes", data["num_classes"]), ck.get("vocab_size", data["vocab_size"]),
                         modalities=data["modalities"], audio_dim=data.get("audio_dim")).to(device)
     model.load_state_dict(ck["model"])
@@ -89,6 +89,7 @@ def main():
         print("probe:", fmt(pr))
         res.update(pr)
     save_json(res, os.path.join(a.run_dir, "eval_" + (os.path.basename(a.test_csv) if a.test_csv else "val") + ".json"))
+    return res
 
 
 if __name__ == "__main__":

@@ -1,0 +1,8 @@
+true / predicted,anger,disgust,fear,joy,neutral,sadness,surprise
+anger,5,2,0,0,1,2,0
+disgust,4,2,0,0,2,2,0
+fear,4,2,0,1,2,0,1
+joy,4,1,0,2,1,0,2
+neutral,1,2,0,0,7,0,0
+sadness,2,0,0,1,2,3,2
+surprise,3,2,0,0,0,0,5

@@ -340,7 +340,7 @@ def build_dataloaders(args, out_dir: Optional[str] = None):
     kw = dict(batch_size=args.batch_size, num_workers=args.num_workers, collate_fn=collate_fn,
               pin_memory=torch.cuda.is_available())
     loaders = {
-        "train": DataLoader(tr, shuffle=True, drop_last=True, **kw),
+        "train": DataLoader(tr, shuffle=True, drop_last=not getattr(args, "keep_last_batch", False), **kw),
         "val": DataLoader(va, shuffle=False, **kw),
         "test": DataLoader(te, shuffle=False, **kw) if te is not None else None,
     }

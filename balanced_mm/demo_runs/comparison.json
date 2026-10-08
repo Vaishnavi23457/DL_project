@@ -1,0 +1,81 @@
+{
+  "runs": [
+    {
+      "dataset": "food101",
+      "modulation": "none",
+      "seed": 0,
+      "run": "food101_s0_none",
+      "best_val_acc": 0.4,
+      "test_acc": 0.3,
+      "test_macro_f1": 0.28414946164946164
+    },
+    {
+      "dataset": "food101",
+      "modulation": "opm",
+      "seed": 0,
+      "run": "food101_s0_opm",
+      "best_val_acc": 0.4,
+      "test_acc": 0.44,
+      "test_macro_f1": 0.4370629370629371
+    },
+    {
+      "dataset": "food101",
+      "modulation": "ogm",
+      "seed": 0,
+      "run": "food101_s0_ogm",
+      "best_val_acc": 0.46,
+      "test_acc": 0.4,
+      "test_macro_f1": 0.3777777777777777
+    },
+    {
+      "dataset": "food101",
+      "modulation": "both",
+      "seed": 0,
+      "run": "food101_s0_both",
+      "best_val_acc": 0.36,
+      "test_acc": 0.28,
+      "test_macro_f1": 0.2595115995115995
+    },
+    {
+      "dataset": "meld",
+      "modulation": "none",
+      "seed": 0,
+      "run": "meld_s0_none",
+      "best_val_acc": 0.28571428741727556,
+      "test_acc": 0.34285714285714286,
+      "test_macro_f1": 0.3131659936701953
+    },
+    {
+      "dataset": "meld",
+      "modulation": "opm",
+      "seed": 0,
+      "run": "meld_s0_opm",
+      "best_val_acc": 0.357142858845847,
+      "test_acc": 0.24285714328289032,
+      "test_macro_f1": 0.22405312257529003
+    },
+    {
+      "dataset": "meld",
+      "modulation": "ogm",
+      "seed": 0,
+      "run": "meld_s0_ogm",
+      "best_val_acc": 0.3285714294229235,
+      "test_acc": 0.28571428656578063,
+      "test_macro_f1": 0.22844774273345703
+    },
+    {
+      "dataset": "meld",
+      "modulation": "both",
+      "seed": 0,
+      "run": "meld_s0_both",
+      "best_val_acc": 0.257142858845847,
+      "test_acc": 0.27142857228006634,
+      "test_macro_f1": 0.216996319151964
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.5.1+cpu",
+    "cuda_available": false
+  }
+}

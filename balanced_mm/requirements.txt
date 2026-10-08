@@ -1,5 +1,5 @@
-torch>=2.0
-torchvision>=0.15
+torch>=2.3
+torchvision>=0.18
 numpy>=1.23
 Pillow>=9.0
 matplotlib>=3.5        # plots (plot_history.py, bml/analysis.py)

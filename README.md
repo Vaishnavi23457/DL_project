@@ -8,6 +8,8 @@ discrepancy ratio ρ se *kitna*, aur training-time modulation (OPM / OGM-GE) se 
 
 ## Project resources
 
+**Train from a fresh clone:** [Open the configurable Colab notebook](https://colab.research.google.com/github/Nishant21092004/DL_project/blob/main/balanced_mm/notebooks/02_colab_training.ipynb). It includes a real-data sample in the repository, custom/full-data download options, fresh training, held-out test metrics, graphs, and confusion matrices. See [the Colab guide](balanced_mm/COLAB_GUIDE.md) and [new sample-run results](balanced_mm/demo_runs/RESULTS.md). These short demo runs are separate from the older benchmark below.
+
 | Resource | File |
 |---|---|
 | Review questions and answers | [`docs/REVIEW_QA.md`](docs/REVIEW_QA.md) |
