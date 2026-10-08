@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/Vaishnavi23457/DL_project.git",
+  "stage": "baseline_to_mbs",
+  "dataset": "CREMA-D",
+  "seed": 42,
+  "num_epochs": 15,
+  "batch_size": 32,
+  "num_workers": 0,
+  "best_checkpoint": "/kaggle/working/DL_project/modality_bias/checkpoints/crema_d_baseline_best.pth",
+  "results_directory": "/kaggle/working/DL_project/modality_bias/results",
+  "mbs_source": "/kaggle/working/DL_project/modality_bias/mb/mbs.py",
+  "raw_dataset_uploaded_to_github": false
+}

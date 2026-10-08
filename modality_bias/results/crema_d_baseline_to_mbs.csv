@@ -1,0 +1,2 @@
+dataset,multimodal_accuracy,multimodal_macro_f1,audio_only_accuracy,audio_only_macro_f1,visual_only_accuracy,visual_only_macro_f1,audio_mbs,visual_mbs,dominant_modality
+CREMA-D,0.6225352112676056,0.6106696245524932,0.4103286384976526,0.368628432672022,0.5746478873239437,0.5669765018117916,0.5025806427001953,0.4974193274974823,audio

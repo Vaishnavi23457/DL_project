@@ -1,0 +1,2 @@
+dataset,model,accuracy,macro_f1,best_val_macro_f1
+CREMA-D,multimodal_baseline,0.6225352112676056,0.6106696245524932,0.6673682928796881
