@@ -1,0 +1,32 @@
+{
+  "dataset": "CMU-MOSI",
+  "dataset_source": "tamb2203579/CMU-MOSI/Processed/aligned_50.pkl",
+  "feature_method": "mean pooling over 50 aligned time steps",
+  "normalization": "StandardScaler fit on training split only",
+  "labels": "classification_labels (three classes: 0, 1, 2)",
+  "modalities": [
+    "text",
+    "audio",
+    "vision"
+  ],
+  "input_dimensions": {
+    "text": 768,
+    "audio": 5,
+    "vision": 20
+  },
+  "seed": 42,
+  "best_epoch": 3,
+  "best_validation_macro_f1": 0.5270212383755476,
+  "test_accuracy": 0.7551020408163265,
+  "test_macro_f1": 0.5130773736190496,
+  "mbs_definition": "Each modality head's probability for the true class, normalized across text/audio/vision per sample.",
+  "outputs": [
+    "baseline_metrics.json",
+    "cmu_mosi_mbs_summary.csv",
+    "cmu_mosi_mean_mbs.png",
+    "cmu_mosi_test_mbs.csv",
+    "test_confusion_matrix.png",
+    "training_curves.png",
+    "training_history.csv"
+  ]
+}

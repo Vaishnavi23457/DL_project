@@ -1,0 +1,47 @@
+{
+  "dataset": "CMU-MOSI",
+  "source": "tamb2203579/CMU-MOSI/Processed/aligned_50.pkl",
+  "seed": 42,
+  "best_epoch": 3,
+  "best_validation_macro_f1": 0.5270212383755476,
+  "test_accuracy": 0.7551020408163265,
+  "test_macro_f1": 0.5130773736190496,
+  "input_dimensions": {
+    "text": 768,
+    "audio": 5,
+    "vision": 20
+  },
+  "test_classification_report": {
+    "0": {
+      "precision": 0.8138888888888889,
+      "recall": 0.7730870712401056,
+      "f1-score": 0.7929634641407307,
+      "support": 379.0
+    },
+    "1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 30.0
+    },
+    "2": {
+      "precision": 0.6901840490797546,
+      "recall": 0.8122743682310469,
+      "f1-score": 0.746268656716418,
+      "support": 277.0
+    },
+    "accuracy": 0.7551020408163265,
+    "macro avg": {
+      "precision": 0.5013576459895478,
+      "recall": 0.5284538131570509,
+      "f1-score": 0.5130773736190496,
+      "support": 686.0
+    },
+    "weighted avg": {
+      "precision": 0.7283452922507011,
+      "recall": 0.7551020408163265,
+      "f1-score": 0.7394308612533305,
+      "support": 686.0
+    }
+  }
+}
