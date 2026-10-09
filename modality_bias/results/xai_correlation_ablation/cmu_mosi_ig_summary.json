@@ -1,0 +1,8 @@
+{
+  "text_xai_mean": 0.15658715175570284,
+  "audio_xai_mean": 0.6014579566471613,
+  "vision_xai_mean": 0.24195489158370478,
+  "n_samples": 100,
+  "ig_steps": 16,
+  "target": "predicted class"
+}

@@ -1,0 +1,88 @@
+{
+  "CMU-MOSI": {
+    "ig": {
+      "text_xai_mean": 0.15658715175570284,
+      "audio_xai_mean": 0.6014579566471613,
+      "vision_xai_mean": 0.24195489158370478,
+      "n_samples": 100,
+      "ig_steps": 16,
+      "target": "predicted class"
+    },
+    "correlation": [
+      {
+        "modality": "text",
+        "n_matched": 100,
+        "spearman_rho": 0.07756375637563756,
+        "spearman_p": 0.44305628323199264,
+        "pearson_r": 0.015248671508981291,
+        "pearson_p": 0.8803083660930033
+      },
+      {
+        "modality": "audio",
+        "n_matched": 100,
+        "spearman_rho": 0.049492949294929485,
+        "spearman_p": 0.6248368387581704,
+        "pearson_r": -0.002134355382840314,
+        "pearson_p": 0.9831856414380997
+      },
+      {
+        "modality": "vision",
+        "n_matched": 100,
+        "spearman_rho": 0.35451545154515446,
+        "spearman_p": 0.0002959001809035446,
+        "pearson_r": 0.1682432814496168,
+        "pearson_p": 0.0942819866368051
+      }
+    ],
+    "ablation": [
+      {
+        "ablated_modality": "none",
+        "accuracy": 0.7551020408163265,
+        "macro_f1": 0.5130773736190496,
+        "mean_true_class_confidence": 0.6816748976707458,
+        "accuracy_drop": 0.0,
+        "confidence_drop": 0.0
+      },
+      {
+        "ablated_modality": "text",
+        "accuracy": 0.4446064139941691,
+        "macro_f1": 0.2577448339645314,
+        "mean_true_class_confidence": 0.404312402009964,
+        "accuracy_drop": 0.31049562682215737,
+        "confidence_drop": 0.27736249566078186
+      },
+      {
+        "ablated_modality": "audio",
+        "accuracy": 0.7536443148688047,
+        "macro_f1": 0.5118285563587106,
+        "mean_true_class_confidence": 0.6741361618041992,
+        "accuracy_drop": 0.001457725947521804,
+        "confidence_drop": 0.007538735866546631
+      },
+      {
+        "ablated_modality": "vision",
+        "accuracy": 0.7623906705539358,
+        "macro_f1": 0.5173819753770682,
+        "mean_true_class_confidence": 0.6754699945449829,
+        "accuracy_drop": -0.007288629737609353,
+        "confidence_drop": 0.0062049031257629395
+      }
+    ],
+    "baseline": {
+      "n_test": 686,
+      "accuracy": 0.7551020408163265,
+      "macro_f1": 0.5130773736190496
+    }
+  },
+  "CREMA-D": {
+    "dataset": "CREMA-D",
+    "processed_root": null,
+    "checkpoint": "/kaggle/working/DL_project/modality_bias/checkpoints/crema_d_baseline_best.pth",
+    "checkpoint_exists": true,
+    "IG": "not_run",
+    "MBS": "not_run",
+    "correlation": "not_run",
+    "ablation": "not_run"
+  },
+  "note": "Values above are computed by this notebook when cells completed. CREMA-D is not reported as completed unless its processed data/model adapter are valid."
+}

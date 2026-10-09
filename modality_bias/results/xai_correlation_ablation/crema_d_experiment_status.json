@@ -1,0 +1,10 @@
+{
+  "dataset": "CREMA-D",
+  "processed_root": null,
+  "checkpoint": "/kaggle/working/DL_project/modality_bias/checkpoints/crema_d_baseline_best.pth",
+  "checkpoint_exists": true,
+  "IG": "not_run",
+  "MBS": "not_run",
+  "correlation": "not_run",
+  "ablation": "not_run"
+}
