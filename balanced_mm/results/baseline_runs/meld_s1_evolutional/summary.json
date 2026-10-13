@@ -1,0 +1,18 @@
+{
+  "dataset": "meld",
+  "method": "evolutional",
+  "seed": 1,
+  "best_val_accuracy": 0.35714285714285715,
+  "best_epoch": 4,
+  "test_accuracy": 0.24285714285714285,
+  "test_macro_f1": 0.22332582155669284,
+  "test_n": 70,
+  "fit_time_s": 1.1968668380000054,
+  "total_time_s": 1.2215286129999186,
+  "pilot_time_s": 0.0,
+  "parameters": 247175,
+  "initial_base_state_sha256": "9ac69eb8545da22557e12d40dd6291d37e67f35a59e7afd912955b618078836f",
+  "best_state_sha256": "cdb99689ea474d1c9c08b1d09ee8e12b9165076023a8437cc6c5b848ad150f61",
+  "evidence_path": "baseline_runs/meld_s1_evolutional",
+  "completed_at_utc": "2026-10-11T11:07:28.696003+00:00"
+}

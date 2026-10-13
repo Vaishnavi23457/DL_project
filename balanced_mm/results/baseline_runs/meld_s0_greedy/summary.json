@@ -1,0 +1,18 @@
+{
+  "dataset": "meld",
+  "method": "greedy",
+  "seed": 0,
+  "best_val_accuracy": 0.35714285714285715,
+  "best_epoch": 2,
+  "test_accuracy": 0.2857142857142857,
+  "test_macro_f1": 0.27834570004650383,
+  "test_n": 70,
+  "fit_time_s": 1.2698150499998064,
+  "total_time_s": 1.291657485000087,
+  "pilot_time_s": 0.0,
+  "parameters": 284327,
+  "initial_base_state_sha256": "517dcfe87ad4077e3bd8a3daaf8b8aa895fabea62dfee788d217d83bfa7b4552",
+  "best_state_sha256": "9027b3c9f99557c58da1b62d513555e48c61af947c9118b61812faf80197b7bf",
+  "evidence_path": "baseline_runs/meld_s0_greedy",
+  "completed_at_utc": "2026-10-11T10:58:33.537845+00:00"
+}

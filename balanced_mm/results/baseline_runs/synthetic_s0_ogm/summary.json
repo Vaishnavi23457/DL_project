@@ -1,0 +1,18 @@
+{
+  "dataset": "synthetic",
+  "method": "ogm",
+  "seed": 0,
+  "best_val_accuracy": 0.6333333333333333,
+  "best_epoch": 4,
+  "test_accuracy": 0.6733333333333333,
+  "test_macro_f1": 0.6815568663521878,
+  "test_n": 150,
+  "fit_time_s": 22.536790826000015,
+  "total_time_s": 22.977971246999914,
+  "pilot_time_s": 0.0,
+  "parameters": 383846,
+  "initial_base_state_sha256": "06e36ae612d50fec5fd11ea692f671fb9078d7ff44ecb49ec456b7ac7c1713a0",
+  "best_state_sha256": "ff81fe8b05300bada2e068c9d32c4910c3bc133811c1c3b376f683bcf2ab94b7",
+  "evidence_path": "baseline_runs/synthetic_s0_ogm",
+  "completed_at_utc": "2026-10-11T10:57:46.827227+00:00"
+}

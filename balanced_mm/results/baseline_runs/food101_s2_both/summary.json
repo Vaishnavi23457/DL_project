@@ -1,0 +1,18 @@
+{
+  "dataset": "food101",
+  "method": "both",
+  "seed": 2,
+  "best_val_accuracy": 0.46,
+  "best_epoch": 4,
+  "test_accuracy": 0.26,
+  "test_macro_f1": 0.2162464985994398,
+  "test_n": 50,
+  "fit_time_s": 5.505435250000119,
+  "total_time_s": 5.631414403999997,
+  "pilot_time_s": 0.0,
+  "parameters": 361706,
+  "initial_base_state_sha256": "b49862af8837adca18372f561b98e714d6942c1d1d05a661376be700eb4aa89d",
+  "best_state_sha256": "1ec1fc34bcf8ade1048fb05c906f3c609b749d50d08c0265d30b43f8c028be58",
+  "evidence_path": "baseline_runs/food101_s2_both",
+  "completed_at_utc": "2026-10-11T10:57:59.367192+00:00"
+}

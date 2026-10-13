@@ -1,0 +1,18 @@
+{
+  "dataset": "meld",
+  "method": "gblending",
+  "seed": 0,
+  "best_val_accuracy": 0.32857142857142857,
+  "best_epoch": 2,
+  "test_accuracy": 0.2571428571428571,
+  "test_macro_f1": 0.242138813567385,
+  "test_n": 70,
+  "fit_time_s": 1.0900045849998605,
+  "total_time_s": 5.303916737000009,
+  "pilot_time_s": 4.190119859000106,
+  "parameters": 248533,
+  "initial_base_state_sha256": "517dcfe87ad4077e3bd8a3daaf8b8aa895fabea62dfee788d217d83bfa7b4552",
+  "best_state_sha256": "da5009d124d36227f36f29bb1318d0e4ad49a6efccf0052d3bde9a230ad93a42",
+  "evidence_path": "baseline_runs/meld_s0_gblending",
+  "completed_at_utc": "2026-10-11T10:58:16.420565+00:00"
+}

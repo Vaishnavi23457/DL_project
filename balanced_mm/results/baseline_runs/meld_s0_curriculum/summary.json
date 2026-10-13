@@ -1,0 +1,18 @@
+{
+  "dataset": "meld",
+  "method": "curriculum",
+  "seed": 0,
+  "best_val_accuracy": 0.3142857142857143,
+  "best_epoch": 4,
+  "test_accuracy": 0.2714285714285714,
+  "test_macro_f1": 0.24987616474397947,
+  "test_n": 70,
+  "fit_time_s": 2.4509260550000818,
+  "total_time_s": 2.624415255000031,
+  "pilot_time_s": 0.0,
+  "parameters": 247175,
+  "initial_base_state_sha256": "517dcfe87ad4077e3bd8a3daaf8b8aa895fabea62dfee788d217d83bfa7b4552",
+  "best_state_sha256": "9fc156ded8caef69ad9d80b5c13b522c16d07cf794c13baf530b00480789f842",
+  "evidence_path": "baseline_runs/meld_s0_curriculum",
+  "completed_at_utc": "2026-10-11T10:58:23.661521+00:00"
+}

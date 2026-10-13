@@ -16,6 +16,7 @@ discrepancy ratio ρ se *kitna*, aur training-time modulation (OPM / OGM-GE) se 
 | Implementation guide | [`balanced_mm/README.md`](balanced_mm/README.md) |
 | Example workflow and saved outputs | [`balanced_mm/notebooks/01_walkthrough.ipynb`](balanced_mm/notebooks/01_walkthrough.ipynb) |
 | Experiment results and plots | [`balanced_mm/results/RESULTS.md`](balanced_mm/results/RESULTS.md) |
+| Earlier-method comparison, F1, graphs and confusion matrices | [`balanced_mm/results/BASELINE_COMPARISON.md`](balanced_mm/results/BASELINE_COMPARISON.md) — fresh matched short runs; dataset/protocol scope is stated in the report |
 | OPM / OGM-GE implementation | [`balanced_mm/bml/modulation.py`](balanced_mm/bml/modulation.py) |
 | PaliGemma attention heat-map demo | [`multimodal (2).ipynb`](multimodal%20(2).ipynb) |
 | Unit tests | [`balanced_mm/tests/`](balanced_mm/tests/) |
@@ -40,6 +41,8 @@ Inside `balanced_mm/`:
 | `bml/metrics.py` | Confusion matrix, per-class accuracy, macro-F1, calibration error |
 | `bml/models.py` / `bml/data.py` / `bml/engine.py` | Encoders + late fusion (incl. VectorMLPEncoder for audio features), CSV + synthetic data (image/audio/text columns auto-detected), train/eval loops (Alg 1/2) |
 | `bml/analysis.py` + `scripts/make_report.py` | runs → `results/` auto-report (tables + plots) |
+| `bml/baselines.py` + `scripts/run_baseline_comparison.py` | Earlier learning-strategy adaptations: GBlending, Greedy + MMTM, ModDrop, and four dropout variants; matched OPM/OGM controls |
+| `scripts/make_baseline_report.py` + `scripts/plot_baseline_comparison.py` | Saved test predictions → comparison/difference tables, accuracy/F1 graphs, training curves, class reports and confusion matrices |
 | `train.py` / `eval.py` / `compare.py` | CLI training (`--modulation none\|opm\|ogm\|both`), checkpoint eval (confusion/ECE), multi-run tables |
 | `scripts/run_food101.sh` / `run_meld.sh` | Real datasets: Food-101 (image + prompt-text), MELD (text + audio) — full comparison scripts |
 | `notebooks/01_walkthrough.ipynb` | **Executed** demo — code + output in GitHub Preview |

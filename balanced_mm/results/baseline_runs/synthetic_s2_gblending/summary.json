@@ -1,0 +1,18 @@
+{
+  "dataset": "synthetic",
+  "method": "gblending",
+  "seed": 2,
+  "best_val_accuracy": 0.16666666666666666,
+  "best_epoch": 0,
+  "test_accuracy": 0.16666666666666666,
+  "test_macro_f1": 0.05808876361023601,
+  "test_n": 150,
+  "fit_time_s": 23.476372341000115,
+  "total_time_s": 98.91712536800014,
+  "pilot_time_s": 74.99099578999994,
+  "parameters": 385010,
+  "initial_base_state_sha256": "dc5e3b90205798b450eb222f637cf26b95c2751a6d9a2633727f199e5db3acdc",
+  "best_state_sha256": "2012f2f370656f31cd7fb0c2ee688ea9d18b7e772edf33a44cc4e57836c90c26",
+  "evidence_path": "baseline_runs/synthetic_s2_gblending",
+  "completed_at_utc": "2026-10-11T11:06:48.293864+00:00"
+}

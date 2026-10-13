@@ -1,0 +1,62 @@
+{
+  "accuracy": 0.2714285714285714,
+  "macro_precision": 0.34796949082663364,
+  "macro_recall": 0.27142857142857146,
+  "macro_f1": 0.24987616474397947,
+  "weighted_f1": 0.24987616474397945,
+  "micro_f1": 0.2714285714285714,
+  "balanced_accuracy": 0.27142857142857146,
+  "test_n": 70,
+  "zero_division": 0,
+  "classes": [
+    {
+      "class": "anger",
+      "precision": 0.25,
+      "recall": 0.4,
+      "f1": 0.3076923076923077,
+      "support": 10
+    },
+    {
+      "class": "disgust",
+      "precision": 0.18181818181818182,
+      "recall": 0.2,
+      "f1": 0.1904761904761905,
+      "support": 10
+    },
+    {
+      "class": "fear",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10
+    },
+    {
+      "class": "joy",
+      "precision": 0.4166666666666667,
+      "recall": 0.5,
+      "f1": 0.45454545454545453,
+      "support": 10
+    },
+    {
+      "class": "neutral",
+      "precision": 0.4444444444444444,
+      "recall": 0.4,
+      "f1": 0.4210526315789474,
+      "support": 10
+    },
+    {
+      "class": "sadness",
+      "precision": 0.14285714285714285,
+      "recall": 0.3,
+      "f1": 0.19354838709677416,
+      "support": 10
+    },
+    {
+      "class": "surprise",
+      "precision": 1.0,
+      "recall": 0.1,
+      "f1": 0.18181818181818182,
+      "support": 10
+    }
+  ]
+}

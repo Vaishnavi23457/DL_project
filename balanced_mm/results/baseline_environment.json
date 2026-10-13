@@ -1,0 +1,215 @@
+{
+  "python": "3.12.14",
+  "torch": "2.5.1+cpu",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "source_commit_before_update": "7f5e2c0bb83cfbb0ba2903197c9bba27627915f7",
+  "completed_runs": 108,
+  "sweeps": [
+    {
+      "python": "3.12.14",
+      "torch": "2.5.1+cpu",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "options": {
+        "datasets": [
+          "food101",
+          "meld"
+        ],
+        "methods": [
+          "none",
+          "gblending",
+          "moddrop",
+          "dropout",
+          "annealed",
+          "evolutional",
+          "curriculum",
+          "opm",
+          "ogm",
+          "both",
+          "mmtm",
+          "greedy"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "data_root": "data/verified_demo",
+        "out": "results",
+        "epochs": 5,
+        "batch_size": 16,
+        "text_dim": 64,
+        "text_layers": 1,
+        "cpu_threads": 2,
+        "synthetic_train_n": 600,
+        "synthetic_eval_n": 150
+      },
+      "code_sha256": {
+        "scripts/run_baseline_comparison.py": "d6725b24457dc9b23f8e01bdf5eab0bfe43a6d80f7cab53bbadf4a72d7315c5c",
+        "bml/baselines.py": "a72a0e6b045e8a2ed3b937a71b54bf44a517a9f3ff01bb3d8b8022be5dc2098f",
+        "bml/modulation.py": "fc3b7fde49db7cfadea918069f6dd3d558274debfb287d9893ff04335e34a811"
+      },
+      "demo_archive_sha256": {
+        "food101.zip": "3d77e0b2047aab58d2f0da316ca775af000049462b40097bc388da37576e4294",
+        "meld.zip": "c1fe24cafb5fef206a4608e1a98a606419744023cfa541dedb9b81c75773bc12"
+      }
+    },
+    {
+      "python": "3.12.14",
+      "torch": "2.5.1+cpu",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "options": {
+        "datasets": [
+          "synthetic"
+        ],
+        "methods": [
+          "none",
+          "gblending",
+          "moddrop",
+          "dropout",
+          "annealed",
+          "evolutional",
+          "curriculum",
+          "opm",
+          "ogm",
+          "both",
+          "mmtm",
+          "greedy"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "data_root": "data/verified_demo",
+        "out": "/tmp/dl-synthetic-baselines",
+        "epochs": 5,
+        "batch_size": 16,
+        "text_dim": 64,
+        "text_layers": 1,
+        "cpu_threads": 2,
+        "synthetic_train_n": 600,
+        "synthetic_eval_n": 150
+      },
+      "code_sha256": {
+        "scripts/run_baseline_comparison.py": "d6725b24457dc9b23f8e01bdf5eab0bfe43a6d80f7cab53bbadf4a72d7315c5c",
+        "bml/baselines.py": "a72a0e6b045e8a2ed3b937a71b54bf44a517a9f3ff01bb3d8b8022be5dc2098f",
+        "bml/modulation.py": "fc3b7fde49db7cfadea918069f6dd3d558274debfb287d9893ff04335e34a811"
+      },
+      "demo_archive_sha256": {
+        "food101.zip": "3d77e0b2047aab58d2f0da316ca775af000049462b40097bc388da37576e4294",
+        "meld.zip": "c1fe24cafb5fef206a4608e1a98a606419744023cfa541dedb9b81c75773bc12"
+      }
+    }
+  ],
+  "history_repair_executions": [
+    {
+      "python": "3.12.14",
+      "torch": "2.5.1+cpu",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "options": {
+        "datasets": [
+          "meld"
+        ],
+        "methods": [
+          "moddrop",
+          "annealed"
+        ],
+        "seeds": [
+          0
+        ],
+        "data_root": "data/verified_demo",
+        "out": "/tmp/dl-repair-s0",
+        "epochs": 5,
+        "batch_size": 16,
+        "text_dim": 64,
+        "text_layers": 1,
+        "cpu_threads": 2,
+        "synthetic_train_n": 600,
+        "synthetic_eval_n": 150
+      },
+      "code_sha256": {
+        "scripts/run_baseline_comparison.py": "d6725b24457dc9b23f8e01bdf5eab0bfe43a6d80f7cab53bbadf4a72d7315c5c",
+        "bml/baselines.py": "a72a0e6b045e8a2ed3b937a71b54bf44a517a9f3ff01bb3d8b8022be5dc2098f",
+        "bml/modulation.py": "fc3b7fde49db7cfadea918069f6dd3d558274debfb287d9893ff04335e34a811"
+      },
+      "demo_archive_sha256": {
+        "food101.zip": "3d77e0b2047aab58d2f0da316ca775af000049462b40097bc388da37576e4294",
+        "meld.zip": "c1fe24cafb5fef206a4608e1a98a606419744023cfa541dedb9b81c75773bc12"
+      }
+    },
+    {
+      "python": "3.12.14",
+      "torch": "2.5.1+cpu",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "options": {
+        "datasets": [
+          "meld"
+        ],
+        "methods": [
+          "dropout",
+          "evolutional"
+        ],
+        "seeds": [
+          1
+        ],
+        "data_root": "data/verified_demo",
+        "out": "/tmp/dl-repair-s1",
+        "epochs": 5,
+        "batch_size": 16,
+        "text_dim": 64,
+        "text_layers": 1,
+        "cpu_threads": 2,
+        "synthetic_train_n": 600,
+        "synthetic_eval_n": 150
+      },
+      "code_sha256": {
+        "scripts/run_baseline_comparison.py": "d6725b24457dc9b23f8e01bdf5eab0bfe43a6d80f7cab53bbadf4a72d7315c5c",
+        "bml/baselines.py": "a72a0e6b045e8a2ed3b937a71b54bf44a517a9f3ff01bb3d8b8022be5dc2098f",
+        "bml/modulation.py": "fc3b7fde49db7cfadea918069f6dd3d558274debfb287d9893ff04335e34a811"
+      },
+      "demo_archive_sha256": {
+        "food101.zip": "3d77e0b2047aab58d2f0da316ca775af000049462b40097bc388da37576e4294",
+        "meld.zip": "c1fe24cafb5fef206a4608e1a98a606419744023cfa541dedb9b81c75773bc12"
+      }
+    },
+    {
+      "python": "3.12.14",
+      "torch": "2.5.1+cpu",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "options": {
+        "datasets": [
+          "meld"
+        ],
+        "methods": [
+          "annealed"
+        ],
+        "seeds": [
+          2
+        ],
+        "data_root": "data/verified_demo",
+        "out": "/tmp/dl-repair-s2",
+        "epochs": 5,
+        "batch_size": 16,
+        "text_dim": 64,
+        "text_layers": 1,
+        "cpu_threads": 2,
+        "synthetic_train_n": 600,
+        "synthetic_eval_n": 150
+      },
+      "code_sha256": {
+        "scripts/run_baseline_comparison.py": "d6725b24457dc9b23f8e01bdf5eab0bfe43a6d80f7cab53bbadf4a72d7315c5c",
+        "bml/baselines.py": "a72a0e6b045e8a2ed3b937a71b54bf44a517a9f3ff01bb3d8b8022be5dc2098f",
+        "bml/modulation.py": "fc3b7fde49db7cfadea918069f6dd3d558274debfb287d9893ff04335e34a811"
+      },
+      "demo_archive_sha256": {
+        "food101.zip": "3d77e0b2047aab58d2f0da316ca775af000049462b40097bc388da37576e4294",
+        "meld.zip": "c1fe24cafb5fef206a4608e1a98a606419744023cfa541dedb9b81c75773bc12"
+      }
+    }
+  ],
+  "history_repairs_reproduced_selected_model_hashes_exactly": true,
+  "artifact_generator_sha256": {
+    "scripts/make_baseline_report.py": "251e861c2c2b3d059339f888522d1ebb42870af699e33ca9aa20635c3503554d",
+    "scripts/plot_baseline_comparison.py": "790125f267597790e6aa5cc95ab1ca3e1024f806ebb0895f06e1052b15135d45"
+  }
+}

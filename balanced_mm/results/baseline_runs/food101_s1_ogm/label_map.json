@@ -1,0 +1,12 @@
+{
+  "caesar_salad": 0,
+  "chocolate_cake": 1,
+  "french_fries": 2,
+  "fried_rice": 3,
+  "hamburger": 4,
+  "ice_cream": 5,
+  "pizza": 6,
+  "ramen": 7,
+  "sushi": 8,
+  "tacos": 9
+}

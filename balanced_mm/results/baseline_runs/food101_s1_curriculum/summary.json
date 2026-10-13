@@ -1,0 +1,18 @@
+{
+  "dataset": "food101",
+  "method": "curriculum",
+  "seed": 1,
+  "best_val_accuracy": 0.46,
+  "best_epoch": 2,
+  "test_accuracy": 0.3,
+  "test_macro_f1": 0.2360877684407096,
+  "test_n": 50,
+  "fit_time_s": 5.818979172000127,
+  "total_time_s": 5.945486291999941,
+  "pilot_time_s": 0.0,
+  "parameters": 361706,
+  "initial_base_state_sha256": "4e9247fe394d368c615058dea38fedf72571ee95a29e3938388aac64c43fd67a",
+  "best_state_sha256": "0585192c9baec9291d1de492bf785fc7e934d1a674b3a4cd48ce3f06ff9c1c8d",
+  "evidence_path": "baseline_runs/food101_s1_curriculum",
+  "completed_at_utc": "2026-10-11T10:55:53.371847+00:00"
+}

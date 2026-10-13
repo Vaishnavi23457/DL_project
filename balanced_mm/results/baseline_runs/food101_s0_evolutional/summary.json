@@ -1,0 +1,18 @@
+{
+  "dataset": "food101",
+  "method": "evolutional",
+  "seed": 0,
+  "best_val_accuracy": 0.34,
+  "best_epoch": 4,
+  "test_accuracy": 0.32,
+  "test_macro_f1": 0.29214285714285715,
+  "test_n": 50,
+  "fit_time_s": 6.690365320000183,
+  "total_time_s": 6.798917972000027,
+  "pilot_time_s": 0.0,
+  "parameters": 361706,
+  "initial_base_state_sha256": "5f2940441605f54d5c2360895eed6f0b2d6fcb017e926faa1b15c2bdd09e773b",
+  "best_state_sha256": "cb5546aee07e6e3cd6a5273fafa8ca9f46e8f752b29411d30adc93271193568a",
+  "evidence_path": "baseline_runs/food101_s0_evolutional",
+  "completed_at_utc": "2026-10-11T10:54:06.649707+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "dataset": "synthetic",
+  "method": "moddrop",
+  "seed": 1,
+  "best_val_accuracy": 0.7133333333333334,
+  "best_epoch": 4,
+  "test_accuracy": 0.74,
+  "test_macro_f1": 0.7378846669652505,
+  "test_n": 150,
+  "fit_time_s": 24.452364707000015,
+  "total_time_s": 25.367872583999997,
+  "pilot_time_s": 0.0,
+  "parameters": 383846,
+  "initial_base_state_sha256": "8f67bea3f3b5263747ef939c95b7806b9c8d4b9aa63933e057d4efb466ecd4d8",
+  "best_state_sha256": "6d45418016e5276f9aeeaba994ebb9a6417fccf3042127b7c634f34ec30d03c5",
+  "evidence_path": "baseline_runs/synthetic_s1_moddrop",
+  "completed_at_utc": "2026-10-11T11:01:12.118640+00:00"
+}

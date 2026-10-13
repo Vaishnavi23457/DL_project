@@ -1,0 +1,18 @@
+{
+  "dataset": "synthetic",
+  "method": "evolutional",
+  "seed": 0,
+  "best_val_accuracy": 0.7333333333333333,
+  "best_epoch": 4,
+  "test_accuracy": 0.6933333333333334,
+  "test_macro_f1": 0.6989407251308116,
+  "test_n": 150,
+  "fit_time_s": 22.021292570000014,
+  "total_time_s": 22.480471583000053,
+  "pilot_time_s": 0.0,
+  "parameters": 383846,
+  "initial_base_state_sha256": "06e36ae612d50fec5fd11ea692f671fb9078d7ff44ecb49ec456b7ac7c1713a0",
+  "best_state_sha256": "6f43cfb7336175c7c3ccc3549f1ec64fb54f63e0f8e3c2dd728f6a68bf37a67b",
+  "evidence_path": "baseline_runs/synthetic_s0_evolutional",
+  "completed_at_utc": "2026-10-11T10:56:39.416924+00:00"
+}

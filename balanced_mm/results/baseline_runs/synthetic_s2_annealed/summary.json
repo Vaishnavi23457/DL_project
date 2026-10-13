@@ -1,0 +1,18 @@
+{
+  "dataset": "synthetic",
+  "method": "annealed",
+  "seed": 2,
+  "best_val_accuracy": 0.52,
+  "best_epoch": 4,
+  "test_accuracy": 0.5733333333333334,
+  "test_macro_f1": 0.5818135460336372,
+  "test_n": 150,
+  "fit_time_s": 24.429469917000006,
+  "total_time_s": 24.970203086999845,
+  "pilot_time_s": 0.0,
+  "parameters": 383846,
+  "initial_base_state_sha256": "dc5e3b90205798b450eb222f637cf26b95c2751a6d9a2633727f199e5db3acdc",
+  "best_state_sha256": "c1b5e2d112e21ab97ccbcfab01223df729505e8f8c59ae8b73f1d7d2658f221b",
+  "evidence_path": "baseline_runs/synthetic_s2_annealed",
+  "completed_at_utc": "2026-10-11T11:07:59.275700+00:00"
+}

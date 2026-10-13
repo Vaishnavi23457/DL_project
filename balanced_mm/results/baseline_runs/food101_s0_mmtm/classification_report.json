@@ -1,0 +1,83 @@
+{
+  "accuracy": 0.24,
+  "macro_precision": 0.25730158730158725,
+  "macro_recall": 0.24000000000000005,
+  "macro_f1": 0.2196449456975773,
+  "weighted_f1": 0.21964494569757725,
+  "micro_f1": 0.24,
+  "balanced_accuracy": 0.24000000000000005,
+  "test_n": 50,
+  "zero_division": 0,
+  "classes": [
+    {
+      "class": "caesar_salad",
+      "precision": 0.1111111111111111,
+      "recall": 0.2,
+      "f1": 0.14285714285714285,
+      "support": 5
+    },
+    {
+      "class": "chocolate_cake",
+      "precision": 0.2857142857142857,
+      "recall": 0.8,
+      "f1": 0.4210526315789473,
+      "support": 5
+    },
+    {
+      "class": "french_fries",
+      "precision": 0.5,
+      "recall": 0.2,
+      "f1": 0.28571428571428575,
+      "support": 5
+    },
+    {
+      "class": "fried_rice",
+      "precision": 0.3333333333333333,
+      "recall": 0.2,
+      "f1": 0.25,
+      "support": 5
+    },
+    {
+      "class": "hamburger",
+      "precision": 0.14285714285714285,
+      "recall": 0.2,
+      "f1": 0.16666666666666666,
+      "support": 5
+    },
+    {
+      "class": "ice_cream",
+      "precision": 0.5,
+      "recall": 0.4,
+      "f1": 0.4444444444444445,
+      "support": 5
+    },
+    {
+      "class": "pizza",
+      "precision": 0.5,
+      "recall": 0.2,
+      "f1": 0.28571428571428575,
+      "support": 5
+    },
+    {
+      "class": "ramen",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 5
+    },
+    {
+      "class": "sushi",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 5
+    },
+    {
+      "class": "tacos",
+      "precision": 0.2,
+      "recall": 0.2,
+      "f1": 0.20000000000000004,
+      "support": 5
+    }
+  ]
+}

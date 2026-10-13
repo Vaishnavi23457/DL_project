@@ -1,0 +1,18 @@
+{
+  "dataset": "meld",
+  "method": "dropout",
+  "seed": 1,
+  "best_val_accuracy": 0.2571428571428571,
+  "best_epoch": 3,
+  "test_accuracy": 0.2,
+  "test_macro_f1": 0.13972575125629347,
+  "test_n": 70,
+  "fit_time_s": 1.1499227780000183,
+  "total_time_s": 1.1732221849997586,
+  "pilot_time_s": 0.0,
+  "parameters": 247175,
+  "initial_base_state_sha256": "9ac69eb8545da22557e12d40dd6291d37e67f35a59e7afd912955b618078836f",
+  "best_state_sha256": "5ff88be61ac6501b182e06dfb33d932166ab7a835165a2714d80210f5a7699b2",
+  "evidence_path": "baseline_runs/meld_s1_dropout",
+  "completed_at_utc": "2026-10-11T11:07:27.457408+00:00"
+}

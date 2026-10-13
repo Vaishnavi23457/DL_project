@@ -1,0 +1,18 @@
+{
+  "dataset": "meld",
+  "method": "moddrop",
+  "seed": 0,
+  "best_val_accuracy": 0.3,
+  "best_epoch": 4,
+  "test_accuracy": 0.2714285714285714,
+  "test_macro_f1": 0.22485632183908044,
+  "test_n": 70,
+  "fit_time_s": 1.1688875260001623,
+  "total_time_s": 1.190176559000065,
+  "pilot_time_s": 0.0,
+  "parameters": 247175,
+  "initial_base_state_sha256": "517dcfe87ad4077e3bd8a3daaf8b8aa895fabea62dfee788d217d83bfa7b4552",
+  "best_state_sha256": "ea5dea6907ed157aad701f4a55519f6bd942a159bc89b37bcab1499ba76940dd",
+  "evidence_path": "baseline_runs/meld_s0_moddrop",
+  "completed_at_utc": "2026-10-11T11:07:22.692527+00:00"
+}

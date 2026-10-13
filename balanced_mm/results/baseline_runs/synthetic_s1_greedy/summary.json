@@ -1,0 +1,18 @@
+{
+  "dataset": "synthetic",
+  "method": "greedy",
+  "seed": 1,
+  "best_val_accuracy": 0.38,
+  "best_epoch": 3,
+  "test_accuracy": 0.41333333333333333,
+  "test_macro_f1": 0.36476841745671146,
+  "test_n": 150,
+  "fit_time_s": 22.118732631000057,
+  "total_time_s": 22.56382629100017,
+  "pilot_time_s": 0.0,
+  "parameters": 420998,
+  "initial_base_state_sha256": "8f67bea3f3b5263747ef939c95b7806b9c8d4b9aa63933e057d4efb466ecd4d8",
+  "best_state_sha256": "5bc63df844d8a542f835b42b2c7f88ac2cf7aa4aff38f25d911c87a5d4aae73c",
+  "evidence_path": "baseline_runs/synthetic_s1_greedy",
+  "completed_at_utc": "2026-10-11T11:04:47.221219+00:00"
+}
