@@ -1,0 +1,38 @@
+{
+  "method": "Balanced Modal Attention (BMA)",
+  "CREMA-D": {
+    "accuracy": 0.6394366197183099,
+    "macro_f1": 0.6329979820537909,
+    "n": 1065,
+    "method": "BMA",
+    "mean_attention_audio": 0.5100840393926056,
+    "mean_attention_visual": 0.4899244424882629,
+    "mean_mbs_audio": 0.48179517163777014,
+    "mean_mbs_visual": 0.5182048149931598,
+    "mean_bma_mbs_audio": 0.4969601834813754,
+    "mean_bma_mbs_visual": 0.5030397382840305
+  },
+  "CMU-MOSI": {
+    "accuracy": 0.7594752186588921,
+    "macro_f1": 0.5149189145956746,
+    "n": 686,
+    "method": "BMA",
+    "mean_attention_text": 0.35206151099837557,
+    "mean_attention_audio": 0.31215094129823734,
+    "mean_attention_vision": 0.3357875473123945,
+    "mean_mbs_text": 0.39927212677423574,
+    "mean_mbs_audio": 0.3031293622899594,
+    "mean_mbs_vision": 0.2975985068969059,
+    "mean_bma_mbs_text": 0.418289356993962,
+    "mean_bma_mbs_audio": 0.28278942196019013,
+    "mean_bma_mbs_vision": 0.29892121041437975
+  },
+  "definition": {
+    "CREMA-D": "Attn_balanced = alpha*Attn_audio + (1-alpha)*Attn_visual",
+    "CMU-MOSI": "Attn_balanced = sum(alpha_m*Attn_m), sum(alpha_m)=1"
+  },
+  "bias_regularization": {
+    "CREMA-D": "R_bias = (MBS_BMA_audio - 0.5)^2",
+    "CMU-MOSI": "R_bias = sum_m (MBS_BMA_m - 1/3)^2"
+  }
+}
