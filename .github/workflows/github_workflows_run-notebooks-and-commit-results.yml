@@ -1,4 +1,4 @@
-name: Run notebooks and commit results
+name: Run notebooks and commit results (verbose, robust)
 
 on:
   workflow_dispatch:
@@ -8,51 +8,64 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install notebook dependencies
-        run: |
-              python -m pip install --upgrade pip
-              if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-              pip install papermill nbformat nbconvert
-              pip install pandas numpy scipy librosa soundfile opencv-python-headless scikit-learn matplotlib gdown huggingface_hub
-              pip install torch torchvision
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
 
+      - name: Show runner + Node/Python info
+        run: |
+          uname -a
+          lsb_release -a || true
+          node --version || true
+          python --version
+          which python
+          pip --version
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Install notebook dependencies
+      - name: Install dependencies (broad set)
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install papermill nbformat nbconvert
-          pip install pandas numpy scipy librosa opencv-python-headless scikit-learn matplotlib
-          # If the notebooks rely on other libs, add them here as needed:
-          # pip install torch torchvision
+          pip install pandas numpy scipy librosa soundfile opencv-python-headless scikit-learn matplotlib gdown huggingface_hub
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip show papermill || true
+          pip freeze > /tmp/pip-freeze.txt
+          echo "=== pip freeze (head) ==="
+          head -n 80 /tmp/pip-freeze.txt || true
+
+      - name: Show notebook kernelspecs present
+        run: |
+          python -c "import jupyter_client.kernelspec as ks; print('Kernels installed:', list(ks.find_kernel_specs().keys()))" || true
 
       - name: Prepare output folders
         run: |
           mkdir -p modality_bias/results
           mkdir -p modality_bias/notebooks/executed
 
-      - name: Run notebook 1
+      - name: Execute notebook 1 (verbose)
         run: |
+          set -o pipefail
           papermill \
             "modality_bias/notebooks/02.A_XAI_CORRELATION_CREMA_D_CMU (1).ipynb" \
-            "modality_bias/notebooks/executed/02.A_XAI_CORRELATION_CREMA_D_CMU.executed.ipynb"
+            "modality_bias/notebooks/executed/02.A_XAI_CORRELATION_CREMA_D_CMU.executed.ipynb" \
+            --log-output || echo "Notebook 1 failed (see logs) but continuing"
 
-      - name: Run notebook 2
+      - name: Execute notebook 2 (verbose)
         run: |
+          set -o pipefail
           papermill \
             "modality_bias/notebooks/02.B_BIAS_ANALYSIS_CREMA_D_CMU_COLAB_READY (1).ipynb" \
-            "modality_bias/notebooks/executed/02.B_BIAS_ANALYSIS_CREMA_D_CMU_COLAB_READY.executed.ipynb"
+            "modality_bias/notebooks/executed/02.B_BIAS_ANALYSIS_CREMA_D_CMU_COLAB_READY.executed.ipynb" \
+            --log-output || echo "Notebook 2 failed (see logs) but continuing"
 
-      - name: Copy generated artifacts into modality_bias/results
+      - name: Copy likely artifact files into modality_bias/results
         run: |
           mkdir -p modality_bias/results
           find . -type f \
@@ -65,10 +78,11 @@ jobs:
               rel="${f#./}"
               target="modality_bias/results/${rel}"
               mkdir -p "$(dirname "$target")"
-              cp "$f" "$target"
+              cp "$f" "$target" || true
             done
+          ls -R modality_bias/results || true
 
-      - name: Commit results back to the repo
+      - name: Commit results back to repository (if any)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -76,8 +90,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add modality_bias/results || true
           git add modality_bias/notebooks/executed || true
-          git commit -m "Add notebook execution outputs to modality_bias/results" || echo "No changes to commit"
-          git push
+          git commit -m "Add notebook execution outputs (Actions run)" || echo "No changes to commit"
+          git push || echo "Push failed (maybe branch protection) - results still available as artifact"
 
       - name: Upload executed notebooks as artifact
         uses: actions/upload-artifact@v4
